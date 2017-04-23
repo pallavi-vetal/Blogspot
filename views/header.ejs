@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dashboard </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=9z0f6j2ukl5vmi8q83f73gztz1fwagi08a99bzuz6nr1isbd"></script>
+    <script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>
+     <script>
+ tinymce.init({
+  selector: '#mytextarea',
+  height: 200,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc code'
+  ],
+  toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+  image_advtab: true,
+ 
+ });
+  </script>
+
+</head>
+<body>
+	<!--nav bar starts -->
+	<div class="container">
+		  <nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="/favicon.ico" class="navbar-brand img-responsive" style="padding-top: 0px;margin-top: -05px;">BlogSpot</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="/">Home</a></li>
+		        <li><a href="#categories_new">Categories</a></li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="article-one">Article-1</a></li>
+		            <li><a href="article-two">Article-2</a></li>
+		            <li><a href="article-three">Article-3</a></li>
+		          </ul>
+		        </li>
+		        <li><a onclick="document.getElementById('upload_blog').style.display='block'" class="btn btn-link" style="text-decoration: none;">Write Blog</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		       <li><a href="/logout" class="btn btn-link btn-md  glyphicon glyphicon-user" style="text-decoration: none;font-size: 18px;"> Profile</a></li>
+				<li><a href="/logout" class="btn-link btn-md  glyphicon glyphicon-log-out" style="text-decoration: none;font-size: 18px;"> Logout</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container" id="upload_blog" style="display: none;">
+			<center><h1 class="h1">Few Steps To Go !</h1></center><hr>
+			<div class="well">
+			<div class="row">
+			<div class="col-md-6 vertical-right" >
+		    	<form class="form-group " action="blogs_post" method="post" style="width: 90%;">
+		    		<input type="text" name="blog_title" placeholder="Enter Blog Title" class="form-control" required /><br>
+		    		<textarea name="blog_desc" maxlength="120" placeholder="Enter brief description (maximum 120 characters are allowed" class="form-control"></textarea><br>
+		    		
+		    			<textarea id="mytextarea" name="blog_details">
+		    				
+		    			</textarea><br>
+		    		<button type="submit" class="btn btn-success btn-outline" style="width: 100%;font-size: 20px;">Post</button>	
+		    		
+		    	</form>
+		    </div>
+		    <div class="col-md-4 col-md-offset-2">
+		    	<h1>sjfkjdk</h1>
+		    </div>	
+	    	</div>
+	      </div>
+    </div>
+  
+
+</body>
+</html>

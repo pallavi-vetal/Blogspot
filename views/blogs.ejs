@@ -1,0 +1,12 @@
+<div class="grid" id="lvc-past-blogs-container">
+    <div class="col-1-1">
+        <div id="past-speakers">
+        <h2><i>-PAST SPEAKERS</i></h2>
+        <% for (var i = 0; i < blogs.length; i++) { %>
+        <ul>
+            <li><a href="<%= blogs[i].title %>"><%= blogs[i].description %></a> (<%= blogs[i].time %> | <%= blogs[i].details %>)</li>
+        </ul>
+        <% }; %>
+        </div>
+    </div>
+</div>
