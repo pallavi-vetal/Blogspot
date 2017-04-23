@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BlogSpot is a simple Blog website. It was created for Hasura assignment.
 
 Stack used:
@@ -21,3 +22,7 @@ Steps To Run:
 
 
 	
+=======
+# blogspot
+Blog Web Application 
+>>>>>>> d10a956cb1f5b0f552ed582cef5181ae4adb834b
